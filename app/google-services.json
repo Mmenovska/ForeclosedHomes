@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "981491046395",
+    "firebase_url": "https://foreclosed-homes-f7398-default-rtdb.firebaseio.com",
+    "project_id": "foreclosed-homes-f7398",
+    "storage_bucket": "foreclosed-homes-f7398.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:981491046395:android:9d373a9f4963782f36dd5e",
+        "android_client_info": {
+          "package_name": "com.gsixacademy.android.foreclosedhomes"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "981491046395-ieecc4b3b5otk06qinc53luolh9cpeab.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.gsixacademy.android.foreclosedhomes",
+            "certificate_hash": "5adce7b6920f237076983db4f746a5f560669aaf"
+          }
+        },
+        {
+          "client_id": "981491046395-3abahfhqoprd4b237inqhs19ikkhvift.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCsKn9auu7mw3b4JkYUu4sGK8QTdcL1JwQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "981491046395-3abahfhqoprd4b237inqhs19ikkhvift.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

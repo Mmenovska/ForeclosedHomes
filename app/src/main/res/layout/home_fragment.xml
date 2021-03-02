@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ImageView
+        android:id="@+id/logo_small"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="30dp"
+        android:src="@drawable/logo"/>
+
+    <TextView
+        android:id="@+id/welcomeTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toEndOf="@id/logo_small"
+        app:layout_constraintTop_toTopOf="@id/logo_small"
+        android:text="Welcome"
+        android:textSize="30sp"
+        android:layout_marginLeft="30dp"
+        app:layout_constraintBottom_toBottomOf="@id/logo_small"
+        android:textStyle="bold"
+        android:textColor="@color/darkGrey"
+        />
+
+    <TextView
+        android:id="@+id/cityPickTv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="@string/select_a_city"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        android:layout_marginLeft="30dp"
+        android:textColor="@color/darkGrey"
+        app:layout_constraintTop_toBottomOf="@id/logo_small"
+        android:layout_marginTop="80dp"
+        />
+
+    <Spinner
+        android:id="@+id/city_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/ThemeOverlay.AppCompat.Dark"
+        android:popupBackground="@android:color/holo_blue_dark"
+        android:padding="20dp"
+        android:layout_margin="20dp"
+        app:layout_constraintTop_toBottomOf="@id/cityPickTv"
+        app:layout_constraintStart_toStartOf="@id/cityPickTv"/>
+    
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/button_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="24dp"
+        android:layout_marginBottom="80dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:src="@drawable/icon_arrow_right"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

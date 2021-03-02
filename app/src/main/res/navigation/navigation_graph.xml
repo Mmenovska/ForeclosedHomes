@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_graph"
+    app:startDestination="@id/splashFragment"
+    tools:ignore = "UnusedNavigation">
+
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.gsixacademy.android.foreclosedhomes.fragment.SplashFragment"
+        android:label="SplashFragment" >
+        <action
+            android:id="@+id/action_splashFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.gsixacademy.android.foreclosedhomes.fragment.HomeFragment"
+        android:label="HomeFragment" >
+        <action
+            android:id="@+id/action_homeFragment_to_propertiesFragment"
+            app:destination="@id/propertiesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/propertiesFragment"
+        android:name="com.gsixacademy.android.foreclosedhomes.fragment.PropertiesFragment"
+        android:label="PropertiesFragment" >
+        <action
+            android:id="@+id/action_propertiesFragment_to_propertyDetailsFragment"
+            app:destination="@id/propertyDetailsFragment"
+            app:popUpToInclusive="true" />
+    </fragment>
+    <fragment
+        android:id="@+id/propertyDetailsFragment"
+        android:name="com.gsixacademy.android.foreclosedhomes.fragment.PropertyDetailsFragment"
+        android:label="PropertyDetailsFragment" />
+</navigation>
