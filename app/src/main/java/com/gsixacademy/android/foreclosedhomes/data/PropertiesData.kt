@@ -7,7 +7,7 @@ import com.google.firebase.database.IgnoreExtraProperties
 @IgnoreExtraProperties
 class PropertiesData() : Parcelable {
     var city : String? = null
-    var id : String? = null
+    var id : Int? = null
     var address : String? = null
     var description : String? = null
     var property : String? = null
@@ -18,7 +18,7 @@ class PropertiesData() : Parcelable {
 
     constructor(parcel: Parcel) : this(){
         city = parcel.readString()
-        id = parcel.readString()
+        id = parcel.readInt()
         address = parcel.readString()
         description = parcel.readString()
         price = parcel.readString()
@@ -30,7 +30,7 @@ class PropertiesData() : Parcelable {
 
     override fun writeToParcel(parcel: Parcel, flags: Int) {
         parcel.writeString(city)
-        parcel.writeString(id)
+        id?.let { parcel.writeInt(it) }
         parcel.writeString(description)
         parcel.writeString(address)
         parcel.writeString(property)

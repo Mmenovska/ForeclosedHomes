@@ -8,7 +8,7 @@
         android:id="@+id/cityNameTv"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:textColor="@android:color/white"
+        android:textColor="@android:color/black"
         android:gravity="center_vertical"
         android:paddingStart="10dp"/>
 

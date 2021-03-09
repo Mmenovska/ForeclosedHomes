@@ -4,6 +4,6 @@ import com.google.firebase.database.IgnoreExtraProperties
 
 @IgnoreExtraProperties
 class PropertiesModel {
-    val imoti : ArrayList<PropertiesData>? = null
+    val imoti : ArrayList<PropertiesData> = ArrayList()
 
 }
