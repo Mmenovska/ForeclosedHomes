@@ -31,7 +31,6 @@ class HomeFragment : Fragment() {
 
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
-        val itemClicked = arguments?.getString("itemClicked")
         database = FirebaseDatabase.getInstance().reference
 
         initialiseFirebaseDatabase()
@@ -41,7 +40,6 @@ class HomeFragment : Fragment() {
         button_next.setOnClickListener {
             var bundle = Bundle()
             bundle.putString("cityClicked",city_spinner.selectedItem.toString())
-            bundle.putString("selectedItem",arguments?.getString("itemClicked"))
             findNavController().navigate(R.id.action_homeFragment_to_propertiesFragment,bundle)
         }
 
